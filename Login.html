@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Checks</title>
+  
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+.header {
+    height: 12vh;
+    width: 100%;
+   
+}
+.navbar {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1px solid #ad3e3e;
+    background-color:black;
+    border-bottom:rgb(218, 112, 214);
+}
+.menu {
+    /* display: none; */
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 24px;
+
+}
+.getStarted{
+  margin-left: 100px;
+  width:300px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 80px;
+  border:1px solid rgb(215, 194, 154);
+  background-color: rgb(215, 194, 154);
+
+}
+#logo {
+    font-family: 'Irish Grover';
+    font-size: 32px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 12px;
+    margin: 12px;
+    text-decoration: none;
+  
+    font-weight:500;
+    font-size: 36px;
+
+
+}
+
+.fas fa-hamburger{
+    color: white;
+}
+.lists {
+    display: flex;
+    
+   
+}
+
+.lists ul  {  
+    
+    display: flex;
+   
+    border-radius: 1px solid #ad3e3e;
+    gap: 123px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.account {
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 1px solid #000;
+    padding: 5px;
+    margin: 5px;
+}
+.lists ul {
+    display: flex;
+   
+    gap: 30px;
+    list-style: none;
+}
+.lists ul li a {
+    text-decoration: none;
+    color:#E9EBF8;
+      font-size: 18px;
+    font-weight: 600;
+}
+
+.cont {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#name{
+    font-family: 'Poppins',sans-serif;
+    font-size: 80px;
+    color:black;
+    text-shadow: 2px #000;
+    font-weight: 800px;
+    
+}
+#des{
+    align-items: center;
+    font-weight:600 ;
+    color:white;
+    margin-left: 40px;
+}
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.left {
+    height: 100%;
+    width: 75%;
+    background-color: #ffffff;
+  
+}
+
+
+
+
+
+
+
+
+
+ 
+ 
+   </style>
+    
+  </head>
+
+  <body>
+    <div class="sideNav">
+         
+    </div>
+    <header>
+    <div class="header" id="header">
+      <!-- header > navbar > menu logo lists account  -->
+      <nav class="navbar" id="navbar">
+        <div class="menu menu">
+            <i class='fas fa-hamburger' style='font-size:36px'></i>
+            <a id="logo" href="#">Food Checks</a>
+            <i class='far fa-edit' style='font-size:36px'></i>
+        </div>
+        
+        <div class="lists" id="lists">
+          <ul>
+            <li><a href="#D1">Home</a></li>
+            <li><a href="#D2">About</a></li>
+            
+            <li><a href="LoginPage.html">Register</a></li>
+           
+          </ul>
+
+        </header>
+ 
+        
+            <img src="images/blog-whatsapp_chatbot_for_pizza_ordering_.webp" width="100%">
+            <div class="centered">
+                <h3 id="name">Food Checks</h3>
+                <button class="getStarted">Get Started</button>
+            </div>
+          </div>
+  </div>
+ 
+       
+    
+   
+   
+    <script src="script.js"></script>
+  
+   
+  </body>
+</html>
