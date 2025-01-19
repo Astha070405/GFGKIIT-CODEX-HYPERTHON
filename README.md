@@ -1,75 +1,23 @@
-<html>
-<head></head>
-<title></title>
-<body>
- <div class="container">
-        <div class="form-box login">
-            <form action="">
-<h1>Login</h1>
-<div class="input-box">
-    <input type="text" placeholder="Username" required>
-    <i class='bx bxs-user'></i>
-</div>
-<div class="input-box">
-    <input type="password" placeholder="Password" required>
-    <i class='bx bxs-lock-alt'></i>
-</div>
-<div class="forgot-link">
-    <a href="#">Forgot Password?</a>
-</div>
-<button type="submit" class="btn">Login</button>
-<p>or Login with social platforms</p>
-<div class="social-icons">
-    <a href="#"><i class='bx bxl-google'></i></a>
-    <a href="#"><i class='bx bxl-facebook'></i></a>
-    <a href="#"><i class='bx bxl-github'></i></a>
-    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-    
-</div>
-            </form>
-        </div>
-        <div class="form-box register">
-            <form action="">
-<h1>Registeration</h1>
-<div class="input-box">
-    <input type="text" placeholder="Username" required>
-    <i class='bx bxs-user'></i>
-</div>
-<div class="input-box">
-    <input type="email" placeholder="Email" required>
-    <i class='bx bxs-envelope' ></i>
-</div>
-<div class="input-box">
-    <input type="password" placeholder="Password" required>
-    <i class='bx bxs-lock-alt'></i>
-</div>
-<div class="forgot-link">
-    <a href="#">Forgot Password?</a>
-</div>
-<button type="submit" class="btn">Register</button>
-<p>or register with social platforms</p>
-<div class="social-icons">
-    <a href="#"><i class='bx bxl-google'></i></a>
-    <a href="#"><i class='bx bxl-facebook'></i></a>
-    <a href="#"><i class='bx bxl-github'></i></a>
-    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-    
-</div>
-            </form>
-        </div>
-        <div class="toggle-box">
-            <div class="toggle-panel toggle-left">
-                <h1>Hello , Welcome</h1>
-                <p>Don't have an account?</p>
-                <button class="btn register-btn">Register</button>
-            </div>
-            <div class="toggle-panel toggle-right">
-                <h1> Welcome back</h1>
-                <p>Already have an account?</p>
-                <button class="btn login-btn">Login</button>
-            </div>
-        </div>
-    </div>
-    </body>
-</html>
+Food Ordering Website with Chatbot
+This project is a food ordering website where users can browse available food items, add them to a shopping cart, and place orders. The website includes a chatbot that assists users with the following tasks:
 
+Placing new orders.
+Tracking existing orders.
+Adding more items to the current order.
+The chatbot is built using Dialogflow and natural language processing (NLP) for better interaction and user experience.
+
+Features
+Food Ordering: Users can browse available food items and add them to a cart. The total price is automatically calculated.
+Order Tracking: The chatbot allows users to track their orders using a unique order ID.
+Order Modification: Users can add additional items to their current order via the chatbot. Entities Used
+Food Item: Represents the food available for ordering.
+Order ID: Unique identifier for each user’s order.
+Order Status: Tracks the progress of the order (e.g., Pending, Delivered).
+Improvements Needed
+Order Tracking: The chatbot needs more training for better handling of order tracking and recognizing user-specific order IDs.
+Backend Integration: Enhance the backend API to support real-time order tracking, adding items, and user profile integration.Backend Overview
+Database: Stores user details, orders, items, and order statuses.
+API: A set of endpoints for the chatbot to interact with the backend:
+POST /order/new – Create a new order.
+GET /order/{id} – Retrieve order details by order ID.
+PUT /order/{id}/add-items – Add items to an existing order.chatbot functionality:In the chatbot we can start by saying hey or anything else. We have trained it so that it can pick up other greetings too. Then we can place an order a menu bar will show from where we can add food items. Then we can confirm it order will be placed
